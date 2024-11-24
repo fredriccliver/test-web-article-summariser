@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+.npm
+.yarn
+
+# Deno
+.deno/
+
+# Build output
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test output files
+readability-test-*.json
+comparison-*.txt
+
+# Cache
+.cache/
+.dccache
