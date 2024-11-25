@@ -45,6 +45,39 @@ export default [
 ];
 ```
 
+### Examples
+Basic usage example:
+```bash
+deno task example:basic
+```
+
+Custom configuration example:
+```bash
+deno task example:custom
+```
+
+### Content Extraction
+To extract content from a specific URL:
+```bash
+deno task extract
+```
+
+Or with a URL directly:
+```bash
+deno task extract --url "https://example.com/article"
+```
+
+Options:
+- `-u, --url <url>`: URL to extract content from
+- `-h, --help`: Show help message
+
+The extractor will:
+- Clean and format the article content
+- Generate a summary (optional)
+- Calculate token count and reading time
+- Extract metadata (author, date, site name)
+- Save results to a JSON file
+
 ## How It Works
 
 The tool fetches HTML content from specified URLs and processes it through multiple content extraction libraries. Each library's implementation can be found in `src/content-extractor-comparison.ts`.

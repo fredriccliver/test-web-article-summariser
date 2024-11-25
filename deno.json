@@ -1,13 +1,10 @@
 {
   "tasks": {
-    "start": "deno run --allow-net --allow-write --allow-read src/content-extractor-comparison.ts",
-    "test-readability": "deno run --allow-net --allow-write --allow-read src/readability-focus-test.ts"
+    "extract": "deno run --allow-net src/article-extractor.ts"
   },
   "imports": {
     "@mozilla/readability": "npm:@mozilla/readability@0.5.0",
     "jsdom": "npm:jsdom@25.0.1",
-    "html-to-text": "npm:html-to-text@9.0.5",
-    "unfluff": "npm:unfluff@3.2.0",
-    "@extractus/article-extractor": "npm:@extractus/article-extractor@8.0.16"
+    "gpt-tokenizer": "npm:gpt-tokenizer@2.1.2"
   }
 }

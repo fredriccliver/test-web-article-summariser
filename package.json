@@ -8,7 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "ts-node --esm src/content-extractor-comparison.mts",
-    "dev": "ts-node-dev --respawn src/content-extractor-comparison.ts"
+    "dev": "ts-node-dev --respawn src/content-extractor-comparison.ts",
+    "example:basic": "ts-node src/examples/basic-usage.ts",
+    "example:custom": "ts-node src/examples/custom-config.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,13 +18,17 @@
   "dependencies": {
     "@extractus/article-extractor": "^8.0.16",
     "@mozilla/readability": "^0.5.0",
+    "gpt-tokenizer": "^2.1.1",
     "html-to-text": "^9.0.5",
     "jsdom": "^25.0.1",
+    "node-summarizer": "^1.0.7",
+    "sanitize-html": "^2.11.0",
     "unfluff": "^3.2.0"
   },
   "devDependencies": {
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.9.3",
+    "@types/sanitize-html": "^2.13.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
